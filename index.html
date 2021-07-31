@@ -21,7 +21,18 @@
         <hr>
         <br>
         <button onclick = "reset()">Reset scores</button>
-        <script>              document.getElementById('p1').innerHTML = x;
+        <script>  
+         var x = 0;
+var y = 0;
+
+function p1 () {
+    document.getElementById('p1').innerHTML = ++x;
+}
+
+function p2 () {
+    document.getElementById('p2').innerHTML = ++y;
+}
+            document.getElementById('p1').innerHTML = x;
 document.getElementById('p2').innerHTML = y;
 
         function reset () {     document.getElementById('p1').innerHTML = x - x;
