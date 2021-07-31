@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h2>Player 1</h2>
+        <h1 id = "p1"></h1>
+        <button onclick = "p1()">Increase</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2>Player 2</h2>
+        <h1 id = "p2"></h1>
+        <button onclick = "p2()">Increase</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <button onclick = "reset()">Reset scores</button>
+        <script>              document.getElementById('p1').innerHTML = x;
+document.getElementById('p2').innerHTML = y;
+
+        function reset () {     document.getElementById('p1').innerHTML = x - x;
+document.getElementById('p2').innerHTML = y - y;
+        }
+        </script>
+        <style>
+            body {
+    text-align:center;
+    font-family:"Montserrat", sans-serif;
+}
+
+button {
+    width:200px;
+    height:30px;
+    background-color:transparent;
+    border:transparent;
+    border-radius:50px;
+    transition:all 0.25s;
+    font-family:"Montserrat", sans-serif;
+}
+
+button, input {
+    outline:none;
+}
+
+button:hover {
+    background-color:ghostwhite;
+}
+
+hr {
+    background-color:gainsboro;
+    border:gainsboro solid 1px;
+    border-radius:50px;
+}
+        </style>
+    </body>
+</html>
