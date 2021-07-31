@@ -35,7 +35,10 @@ function p2 () {
             document.getElementById('p1').innerHTML = x;
 document.getElementById('p2').innerHTML = y;
 
-        function reset () {     document.getElementById('p1').innerHTML = x - x;
+        function reset () {     
+var x = 0;
+var y = 0;
+document.getElementById('p1').innerHTML = x - x;
 document.getElementById('p2').innerHTML = y - y;
         }
         </script>
@@ -72,8 +75,9 @@ hr {
 input {
     border:transparent;
 text-align:center;
-font-size:18px;
+font-size:24px;
 background-color;transparent;
+font-family:"Montserrat", sans-serif;
 }
         </style>
     </body>
