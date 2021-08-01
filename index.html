@@ -14,12 +14,16 @@
         <h1 id = "p1"></h1>
         <button onclick = "p1()">Increase</button>
         <br>
+        <button onclick = "p1lower()">Decrease</button>
+        <br>
         <br>
         <hr>
         <br>
         <input value = "Player 2" />
         <h1 id = "p2"></h1>
         <button onclick = "p2()">Increase</button>
+        <br>
+        <button onclick = "p2lower()">Decrease</button>
         <br>
         <br>
         <hr>
@@ -33,8 +37,16 @@ function p1 () {
     document.getElementById('p1').innerHTML = ++x;
 }
 
+function p1lower () {
+    document.getElementById('p1').innerHTML = --x;
+}
+
 function p2 () {
     document.getElementById('p2').innerHTML = ++y;
+}
+
+function p2lower () {
+    document.getElementById('p2').innerHTML = --y;
 }
             document.getElementById('p1').innerHTML = x;
 document.getElementById('p2').innerHTML = y;
