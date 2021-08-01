@@ -54,12 +54,14 @@ document.getElementById('p2').innerHTML = y;
         function reset () {   
              var p1name = document.getElementById('p1name').value;
              var p2name = document.getElementById('p2name').value;
-             if (document.getElementById('p1').value > document.getElementById('p2').value) {
+             var p1 = document.getElementById('p1').value;
+             var p2 = document.getElementById('p2').value;
+             if (p1.value > p2.value) {
                 alert (p1name + "won!");
-             } else if (document.getElementById('p1').value < document.getElementById('p2').value) {
+             } else if (p1.value < p2.value) {
                 alert (p1name + "won!");
-             } else if (document.getElementById('p1').value == document.getElementById('p2').value) {
-                alert (p1name + "and " + p2name + "tied!");
+             } else if (p1.value == p2.value) {
+                alert (p1name + "and " + p2name + " tied!");
              }
              location.reload();
         }
