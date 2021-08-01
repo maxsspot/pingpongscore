@@ -10,7 +10,7 @@
     <body>
         <br>
         <br>
-        <input value = "Player 1" />
+        <input value = "Player 1" id = "p1name" />
         <h1 id = "p1"></h1>
         <button onclick = "p1()">Increase</button>
         <br>
@@ -19,7 +19,7 @@
         <br>
         <hr>
         <br>
-        <input value = "Player 2" />
+        <input value = "Player 2" id = "p2name" />
         <h1 id = "p2"></h1>
         <button onclick = "p2()">Increase</button>
         <br>
@@ -28,7 +28,7 @@
         <br>
         <hr>
         <br>
-        <button onclick = "reset()">New Game</button>
+        <button onclick = "reset()">End game</button>
         <script>  
          var x = 0;
 var y = 0;
@@ -51,7 +51,16 @@ function p2lower () {
             document.getElementById('p1').innerHTML = x;
 document.getElementById('p2').innerHTML = y;
 
-        function reset () {     
+        function reset () {   
+             var p1name = document.getElementById('p1name').value;
+             var p2name = document.getElementById('p2name').value;
+             if (document.getElementById('p1').value > document.getElementById('p2').value) {
+                alert (p1name + "won!");
+             } else if (document.getElementById('p1').value < document.getElementById('p2').value) {
+                alert (p1name + "won!");
+             } else if (document.getElementById('p1').value == document.getElementById('p2').value) {
+                alert (p1name + "and " + p2name + "tied!");
+             }
              location.reload();
         }
         </script>
