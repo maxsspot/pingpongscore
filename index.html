@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="description" content="A simple score counter!">
+        <meta name="description" content="A simple 2 person or team score counter!">
         <meta name="google-site-verification" content="UVLxRxdr5dUFXmcYr_UVLYIXvf1sh-OyIAW96obQc48" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -55,8 +55,6 @@ document.getElementById('p2').innerHTML = y;
         function reset () {   
              var p1name = document.getElementById('p1name').value;
              var p2name = document.getElementById('p2name').value;
-             var p1 = document.getElementById('p1').innerHTML;
-             var p2 = document.getElementById('p2').innerHTML;
              if (x > y) {
                 alert (p1name + " won!");
              } else if (x < y) {
