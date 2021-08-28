@@ -16,7 +16,7 @@
         <h1 id = "p1"></h1>
         <button onclick = "p1()">Increase</button>
         <br>
-        <button onclick = "p1lower()">Decrease</button>
+        <button onclick = "p1lower()" id = "decrease">Decrease</button>
         <br>
         <br>
         <hr>
@@ -41,6 +41,11 @@ function p1 () {
 
 function p1lower () {
     document.getElementById('p1').innerHTML = --x;
+    if (x = 0) {
+        document.getElementById ("decrease").disabled;
+    } else {
+        document.getElementById ("decrease").enabled;
+    }
 }
 
 function p2 () {
