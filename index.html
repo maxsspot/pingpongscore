@@ -33,9 +33,7 @@
         <button onclick = "reset()">End game</button>
         <script>  
             document.getElementById ("decrease").disabled = true;
-                if (x = 0 || y = 0) {
-        document.getElementById ("decrease").disabled = true;
-    } else {
+                if (x != 0 || y != 0) {
         document.getElementById ("decrease").disabled = false;
     }
          var x = 0;
