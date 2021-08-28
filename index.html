@@ -42,9 +42,9 @@ function p1 () {
 function p1lower () {
     document.getElementById('p1').innerHTML = --x;
     if (x = 0) {
-        document.getElementById ("decrease").disabled;
+        document.getElementById ("decrease").disabled = true;
     } else {
-        document.getElementById ("decrease").enabled;
+        document.getElementById ("decrease").disabled = false;
     }
 }
 
