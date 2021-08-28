@@ -32,6 +32,11 @@
         <br>
         <button onclick = "reset()">End game</button>
         <script>  
+                if (x = 0) {
+        document.getElementById ("decrease").disabled = true;
+    } else {
+        document.getElementById ("decrease").disabled = false;
+    }
          var x = 0;
 var y = 0;
 
@@ -41,11 +46,6 @@ function p1 () {
 
 function p1lower () {
     document.getElementById('p1').innerHTML = --x;
-    if (x = 0) {
-        document.getElementById ("decrease").disabled = true;
-    } else {
-        document.getElementById ("decrease").disabled = false;
-    }
 }
 
 function p2 () {
