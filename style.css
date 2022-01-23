@@ -1,0 +1,42 @@
+body {
+    text-align:center;
+    font-family:"Montserrat", sans-serif;
+                background-color:lightgray.
+}
+
+button {
+    width:200px;
+    height:35px;
+    background-color:transparent;
+    border:transparent;
+    border-radius:50px;
+    transition:all 0.25s;
+    font-family:"Montserrat", sans-serif;
+    cursor:pointer;
+}
+
+button, input {
+    outline:none;
+}
+
+button:hover {
+    background-color:ghostwhite;
+}
+
+button:active {
+    background-color:snow;
+}
+
+hr {
+    background-color:gainsboro;
+    border:gainsboro solid 1px;
+    border-radius:50px;
+}
+
+input {
+    border:transparent;
+text-align:center;
+font-size:24px;
+background-color;transparent;
+font-family:"Montserrat", sans-serif;
+}
