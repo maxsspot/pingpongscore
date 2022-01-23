@@ -1,0 +1,25 @@
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "deny"
+        X-XSS-Protection = "1"
+        Proxy-Authenticate = "Basic"
+        X-Permitted-Cross-Domain-Policies = "none"
+        Content-Language = "en-US"
+        X-DNS-Prefetch-Control = "off"
+        Keep-Alive = "100"
+        Connection = "keep-alive"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy = "no-referrer"
+        X-Download-Options = "noopen"
+        Accept-Encoding = "gzip"
+        Content-Encoding = "gzip"
+    
+        Strict-Transport-Security = '''
+            max-age=31536000;
+            includeSubDomains;
+        '''
+        
+        Permissions-Policy = '''
+            interest-cohort=(none)
+        '''
