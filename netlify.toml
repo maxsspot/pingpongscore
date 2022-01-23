@@ -12,8 +12,6 @@
         X-Content-Type-Options = "nosniff"
         Referrer-Policy = "no-referrer"
         X-Download-Options = "noopen"
-        Accept-Encoding = "gzip"
-        Content-Encoding = "gzip"
     
         Strict-Transport-Security = '''
             max-age=31536000;
